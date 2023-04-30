@@ -2,18 +2,18 @@ import {DiHtml5,
   DiCss3, 
   DiJsBadge, 
   DiNodejsSmall, 
-  DiSqllite, 
+  DiMysql, 
   DiReact} from 'react-icons/di'
 
 import '../styles/components/technologiescontainer.sass'
 
   const technologies = [
-    {id: 'html', name: 'HTML5', icon: <DiHtml5/>},
-    {id: 'css', name: 'CSS3', icon: <DiCss3/>},
-    {id: 'js', name: 'JavaScript', icon: <DiJsBadge/>},
-    {id: 'node', name: 'Node.js', icon: <DiNodejsSmall/>},
-    {id: 'sqllite', name: 'SQL Lite', icon: <DiSqllite/>},
-    {id: 'react', name: 'React.js', icon: <DiReact/>}
+    {id: 'html', name: 'HTML5', icon: <DiHtml5/>, p: 'HTML Semântico, sintaxe, organização, etc'},
+    {id: 'css', name: 'CSS3', icon: <DiCss3/>, p: 'FlexBox, GRID, MediaQuery, Bootstrap, etc'},
+    {id: 'js', name: 'JavaScript', icon: <DiJsBadge/>, p: 'Fetch API, Orientação a Objetos, DOM, etc'},
+    {id: 'node', name: 'Node.js', icon: <DiNodejsSmall/>, p: 'NPM, NPX, testes em JavaScript simples, etc'},
+    {id: 'mysql', name: 'MySQL', icon: <DiMysql/>, p: 'Queries, Criação de Database próprio, etc'},
+    {id: 'react', name: 'React.js', icon: <DiReact/>, p: 'Components, modules, JSX, organização nos imports , etc'}
   ]
 
 const TechnologiesContainer = () => {
@@ -26,7 +26,7 @@ const TechnologiesContainer = () => {
             {tech.icon}
             <div className='technology-info'>
               <h3>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>{tech.p}</p>
             </div>
           </div>
         ))}

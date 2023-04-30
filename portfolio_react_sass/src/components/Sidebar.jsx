@@ -7,11 +7,11 @@ import InformationContainer from './InformationContainer'
 
 const Sidebar = () => {
   return <aside id="sidebar">
-      <img  alt="" />
-      <p className="title">Desenvolvedor</p>
+      <img src={Avatar} alt="foto" />
+      <p className="title">Desenvolvedor Front-End</p>
       <SocialNetworks/>
       <InformationContainer/>
-      <a href="" className="btn">Download currículo</a>
+      <a href='Curriculo.pdf' download className="btn">Download currículo</a>
     </aside>
   
 }
